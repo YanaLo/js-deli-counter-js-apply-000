@@ -19,7 +19,7 @@ function currentLine(theLine){
   }
   else{
     for(let i =0; i<theLine.length;i++){
-      staticStmt+=`${i+1}. ${theLine[i]}${theLine.length-1===i}`
+      staticStmt+=`${i+1}. ${theLine[i]}${theLine.length-1===i?", ":""}`
     }
   }
 }

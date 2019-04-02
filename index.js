@@ -13,7 +13,7 @@ function nowServing(theLine){
 }
 
 function currentLine(theLine){
-  let staticStmt="The line is currently:"
+  let staticStmt="The line is currently: "
   if(!theLine.length){
     return "The line is currently empty."
   }

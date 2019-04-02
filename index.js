@@ -13,13 +13,13 @@ function nowServing(theLine){
 }
 
 function currentLine(theLine){
-  let staticStmt="The line is currently: "
+  let staticStmt="The line is currently:"
   if(!theLine.length){
     return "The line is currently empty."
   }
   else{
     for(let i =0; i<theLine.length;i++){
-      staticStmt+=`${i+1}. ${theLine[i]}${theLine.length-1===i?"":", "}`
+      staticStmt+=`${i+1}. ${theLine[i]}${theLine.length-1!==i?", ":""}`
     }
   }
   return staticStmt;

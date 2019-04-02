@@ -22,4 +22,5 @@ function currentLine(theLine){
       staticStmt+=`${i+1}. ${theLine[i]}${theLine.length-1===i?", ":""}`
     }
   }
+  return staticStmt;
 }
